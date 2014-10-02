@@ -16,6 +16,9 @@
 		<h1>bem-components: от методологии до full stack платформы</h1>
 		<p><a href="https://staff.yandex-team.ru/tadatuta/">Владимир Гриненко, Елена Джетпыспаева</a></p>
 	</header>
+	<section class="slide cover w"><div>
+		<img src="pictures/lego.png" alt="BEM">
+	</div></section>
 	<section class="slide bem"><div>
 		<img src="pictures/sign_theme_batman.png" alt="BEM">
 	</div></section>
@@ -25,29 +28,184 @@
 			3 октября, РИФ-Воронеж 2014</h3>
 		<footer></footer>
 	</div></section>
+	<section class="slide myself"><div>
+		<h2>О нас</h2>
+		<ul>
+			<li>Владимир Гриненко</li>
+			<li>руковожу службой разработки БЭМ</li>
+			<li>i@tadatuta.com</li>
+			<li>@tadatuta</li>
+			<li>github.com/tadatuta</li>
+		</ul>
+		<footer>
+		</footer>
+	</div></section>
+	<section class="slide myself mursya"><div>
+		<h2>О нас</h2>
+		<ul>
+			<li>Мурся</li>
+			<li>3 года в Яндексе</li>
+			<li>Я.Субботники, YaC, группа собственных мероприятий…</li>
+			<li>маркетинг технологий, коммуникации,<br> Developer Relations & BEM</li>
+			<li>mursya@yandex-team.ru</li>
+			<li>@mursya_ru</li>
+		</ul>
+		<footer>
+		</footer>
+	</div></section>
 	<section class="slide"><div>
 		<h2>Содержание</h2>
 		<ul>
-			<li>История БЭМ — кратко, но полно</li>
+			<li>История БЭМ: от методологии до платформы</li>
 			<li class="next">bem-components — готовая библиотека для ваших проектов</li>
 			<li class="next">Сообщество БЭМ</li>
 			<li class="next">Пользователям и контрибьюторам</li>
 		</ul>
 		<footer></footer>
 	</div></section>
-	<section class="slide section"><div>
-		<h2>История БЭМ — кратко, но полно</h2>
+	<section class="slide"><div>
+		<h2>БЭМ — о чем это вообще</h2>
+		<ul>
+			<li>БЭМ — это разделение интерфейсы на блоки</li>
+			<li class="next">ООП в полный рост</li>
+			<li class="next">Единая предметная область</li>
+		</ul>
 	</div></section>
 	<section class="slide"><div>
-		<h2>История БЭМ — кратко, но полно</h2>
+		<h2>БЭМ позволяет</h2>
 		<ul>
-			<li>от методологии</li>
-			<li class="next">до платформы</li>
+			<li>инкапсулировать реализацию блока</li>
+		</ul>
+	</div></section>
+	<section class="slide"><div>
+		<h2>Нейминг</h2>
+		<p><span class="colored">Б</span>лок__<span class="colored">Э</span>лемент_<span class="colored">М</span>одификатор</p>
+		<footer></footer>
+	</div></section>
+	<section class="slide"><div>
+		<h2>БЭМ позволяет</h2>
+		<ul>
+			<li>инкапсулировать реализацию блока</li>
+			<li>наследовать блоки друг от друга</li>
+		</ul>
+	</div></section>
+	<section class="slide"><div>
+		<h2>БЭМ позволяет</h2>
+		<ul>
+			<li>инкапсулировать реализацию блока</li>
+			<li>наследовать блоки друг от друга</li>
+			<li>полиморфизм в терминах модификаторов</li>
+		</ul>
+	</div></section>
+	<section class="slide cover w"><div>
+		<img src="pictures/cat_type_red.jpg" alt="cat_type_red">
+		<footer></footer>
+	</div></section>
+	<section class="slide cover h"><div>
+		<img src="pictures/cat_state_wet.jpg" alt="cat_state_wet">
+		<footer></footer>
+	</div></section>
+	<section class="slide"><div>
+		<h2>3 источника, 3 составные части</h2>
+		<ul>
+			<li>Методология</li>
+			<li class="next">Инструменты</li>
+			<li class="next">Библиотеки готовых блоков</li>
+		</ul>
+	</div></section>
+	<section class="slide"><div>
+		<h2>Преимущества</h2>
+		<ul>
+			<li>Уменьшение сложности кода</li>
+			<li class="next">Упрощение коммуникации</li>
+			<li class="next">Реиспользование кода</li>
+			<li class="next">Ускорение разработки</li>
+		</ul>
+	</div></section>
+	<section class="slide section"><div>
+		<h2>Как меняется процесс разработки</h2>
+	</div></section>
+	<section class="slide"><div>
+		<h2>Отличия БЭМ</h2>
+		<ul>
+			<li>Абстракция над DOM — мыслим в терминах блоков</li>
+		</ul>
+	</div></section>
+	<section class="slide"><div>
+		<h2>BEMJSON</h2>
+		<pre><code>{
+    block: 'button',
+    mods: { theme: 'promo' },
+    content: 'Разместить рекламу'
+}</code></pre>
+		<footer></footer>
+	</div></section>
+	<section class="slide"><div>
+		<h2>Отличия БЭМ</h2>
+		<ul>
+			<li>Абстракция над DOM — мыслим в терминах блоков</li>
+			<li>Разделение на блоки отражено и на файловой системе</li>
+		</ul>
+	</div></section>
+	<section class="slide"><div>
+		<h2>Файловая система</h2>
+		<pre><code>prj/
+    blocks/
+        header/
+            header.css
+            header.js
+            header.tmpl
+            header.svg
+            header.md
+		</code></pre>
+		<footer></footer>
+	</div></section>
+	<section class="slide"><div>
+		<h2>Файловая система</h2>
+		<pre><code>prj/
+    blocks/
+        header/
+            _theme/
+        	    header_theme_simple.css
+        	    header_theme_full.css
+            __logo/
+                header__logo.css
+		</code></pre>
+		<footer></footer>
+	</div></section>
+	<section class="slide"><div>
+		<h2>Отличия БЭМ</h2>
+		<ul>
+			<li>Абстракция над DOM — мыслим в терминах блоков</li>
+			<li>Разделение на блоки отражено и на файловой системе</li>
+			<li>Декларативность во всем</li>
+		</ul>
+	</div></section>
+	<section class="slide"><div>
+		<h2>BEMHTML</h2>
+		<pre><code> block button {
+    tag: 'input'
+    attrs: { type: 'button'}
+}</code></pre>
+		<footer></footer>
+	</div></section>
+	<section class="slide section"><div>
+		<h2>История БЭМ</h2>
+	</div></section>
+	<section class="slide"><div>
+		<h2>История</h2>
+		<ul>
+			<li>в Яндексе</li>
+			<li class="next">под названием АНБ</li>
+			<li class="next">Виталя Харисов и Серега veged Бережной</li>
+			<li class="next">bem-bl и bem-tools</li>
+			<li class="next">bem-core и bem-components</li>
+			<li class="next">c 2006 и по сей день</li>
 		</ul>
 		<footer></footer>
 	</div></section>
 	<section class="slide section"><div>
-		<h2>bem-components — готовая библиотека для ваших проектов</h2>
+		<h2>bem-components</h2>
 		<footer></footer>
 	</div></section>
 	<section class="slide"><div>
@@ -60,23 +218,220 @@
 		</ul>
 		<footer></footer>
 	</div></section>
+	<section class="slide"><div>
+		<h2>bem-components / состав</h2>
+		<div style="position: relative">
+			<ul>
+				<li class="next">link</li>
+				<li class="next">button</li>
+				<li class="next">input</li>
+				<li class="next">attach</li>
+				<li class="next">checkbox-group</li>
+				<li class="next">radio-group</li>
+				<li class="next">menu</li>
+				<li class="next">popup</li>
+			</ul>
+			<ul style="position: absolute; top: 0; right: 10%">
+				<li class="next">dropdown</li>
+				<li class="next">icon</li>
+				<li class="next">image</li>
+				<li class="next">spin</li>
+				<li class="next">select</li>
+				<li class="next">в активной разработке modal</li>
+			</ul>
+		</div>
+		<footer></footer>
+	</div></section>
+	<section class="slide cover w"><div>
+		<img src="pictures/bem-components.png" alt="bem-components">
+		<footer></footer>
+	</div></section>
+	<section class="slide"><div>
+		<h2>bem-components / в тренде</h2>
+		<ul>
+			<li class="next">компонентный подход</li>
+			<li class="next">CSS-препроцессор</li>
+			<li class="next">автопрефиксер</li>
+		</ul>
+		<footer></footer>
+	</div></section>
+	<section class="slide"><div>
+		<h2>bem-components / обгоняя тренды</h2>
+		<ul>
+			<li class="next">в браузерах еще вчера</li>
+			<li class="next">уровни переопределения</li>
+			<li class="next">сборка</li>
+			<li class="next">декларативность</li>
+			<li class="next">дизайн опционально</li>
+		</ul>
+		<footer></footer>
+	</div></section>
+	<section class="slide"><div>
+		<h2>bem-components / тестирование</h2>
+		<ul>
+			<li>ручное</li>
+			<li class="next">unit-тесты для JS</li>
+			<li class="next">тесты на шаблоны</li>
+			<li class="next">тесты на верстку (<a href="https://ru.bem.info/tools/testing/gemini/">gemini</a>)</li>
+			<li class="next">проверка кодстайла</li>
+			<li class="next">CI</li>
+		</ul>
+		<footer></footer>
+	</div></section>
+	<section class="slide section"><div>
+		<h2>Как быстро начать разрабатывать на БЭМ</h2>
+	</div></section>
+	<section class="slide"><div>
+		<h2>Quick start</h2>
+		<ul>
+			<li><a href="http://ru.bem.info/">bem.info</a></li>
+			<li class="next"><a href="https://github.com/bem/project-stub">git clone https://github.com/bem/project-stub.git</a></li>
+			<li class="next">npm i</li>
+			<li class="next">./node_modules/.bin/bem server</li>
+		</ul>
+	</div></section>
+	<section class="slide cover w"><div>
+		<img src="pictures/comming-soon.png" alt="BEM">
+	</div></section>
 	<section class="slide section"><div>
 		<h2>Сообщество БЭМ</h2>
 		<footer></footer>
 	</div></section>
+	<section class="slide cover w"><div>
+		<img src="pictures/users.png" alt="BEM">
+	</div></section>
+	<section class="slide myself vitaly"><div>
+		<div style="width: 70%">
+			<blockquote>«Когда я спросил Харисова на Я.Субботнике в 2009 (я тогда в Яндексе не работал), почему они бесплатно рассказывают и выкладывают наработки, он ответил: „Когда делаешь что-то долго и хорошо, со временем появляется желание поделиться“»,</blockquote>
+				<br>
+				<br>
+				<p style="text-align: right;">— из разговора с одним  неизвестным<br>БЭМ-разработчиком</p>
+		</div>
+		<footer>
+		</footer>
+	</div></section>
+	<section class="slide cover h w"><div>
+		<img src="pictures/love.png" alt="BEM">
+	</div></section>
+	<section class="slide cover h w"><div>
+		<img src="pictures/super.png" alt="BEM">
+	</div></section>
 	<section class="slide"><div>
-		<h2>Сообщество БЭМ</h2>
+		<h2>Ведь приходилось делать</h2>
 		<ul>
-			<li>БЭМ в Яндексе</li>
-			<li class="next">БЭМ в дикой среде</li>
-			<li class="next">БЭМ-inspired</li>
-			<li class="next">БЭМ от Мануфактуры</li>
+			<li>БЭМ — методология и технологии</li>
+			<li class="next">Лего — общепортальную мета-библиотеку блоков Яндекса</li>
+			<li class="next">разбираться с багами сервисов (Поиска, Картинок, Видео и т.д.)</li>
+			<li class="next">отвечать на запросы</li>
+			<li class="next">эвангелизировать</li>
+			<li class="next">иногда чуть-чуть жить</li>
 		</ul>
 		<footer></footer>
 	</div></section>
-<section class="slide section"><div>
+	<section class="slide"><div>
+		<h2>Не только методология, но и</h2>
+		<ul>
+			<li>библиотеки</li>
+			<li class="next">инструменты</li>
+			<li class="next">JS-фреймворк</li>
+			<li class="next">шаблонизатор</li>
+			<li class="next">движок для сбора документации и примеров</li>
+			<li class="next">тесты для блоков</li>
+			<li class="next">много чего еще</li>
+		</ul>
+		<footer></footer>
+	</div></section>
+	<section class="slide cover h w"><div>
+		<img src="pictures/pity.png" alt="BEM">
+	</div></section>
+	<section class="slide cover h w"><div>
+		<img src="pictures/support.png" alt="BEM">
+	</div></section>
+	<section class="slide important"><div>
+		<h2>БЭМ — первый технологический продукт Яндекса</h2>
+	</div></section>
+	<section class="slide"><div>
+		<h2>Кто мы</h2>
+		<ul>
+			<li>Служба разработки БЭМ</li>
+			<li class="next">Лего и разработчики сервисов Яндекса</li>
+			<li class="next">Разработчики, использующие БЭМ</li>
+		</ul>
+		<footer></footer>
+	</div></section>
+	<section class="slide"><div>
+		<h2>Что мы делаем</h2>
+		<ul>
+			<li>Служба разработки БЭМ — продукт</li>
+			<li class="next">Команда Лего — мета-библиотеку Яндекса на этом продукте</li>
+			<li class="next">Разработчики сервисов — сервисы на Лего или БЭМ и часто свои БЭМ-проекты</li>
+			<li class="next">Разработчики, использующие БЭМ — проекты на БЭМ, свои БЭМ-инструменты, библиотеки и даже целые новые методологии :)</li>
+		</ul>
+		<footer></footer>
+	</div></section>
+	<section class="slide cover w"><div>
+		<img src="pictures/we.png" alt="BEM">
+	</div></section>
+	<section class="slide cover w"><div>
+		<img src="pictures/avatars.png" alt="BEM">
+	</div></section>
+	<section class="slide cover w"><div>
+		<img src="pictures/logos.png" alt="BEM">
+	</div></section>
+	<section class="slide cover h w"><div>
+		<img src="pictures/yo.png" alt="BEM">
+	</div></section>
+	<section class="slide cover h w"><div>
+		<img src="pictures/hm.png" alt="BEM">
+	</div></section>
+	<section class="slide section"><div>
 		<h2>Пользователям и контрибьюторам</h2>
 		<footer></footer>
+	</div></section>
+	<section class="slide"><div>
+		<h2>Арсенал</h2>
+		<ul>
+			<li>Продукт — библиотека bem-components: 20 блоков, тесты, документация, демо (coming), пыщ-пыщ!</li>
+			<li class="next">Служба разработки продукта — разработчики, тестировщики, документаторы</li>
+			<li class="next">Проекты и пользователи разного уровня сложности, размера, тп</li>
+			<li class="next">Онлайн-площадка — bem.info</li>
+		</ul>
+		<footer></footer>
+	</div></section>
+	<section class="slide cover h w"><div>
+		<img src="pictures/beminfo.png" alt="BEM">
+	</div></section>
+	<section class="slide cover h w"><div>
+		<img src="pictures/beminfo2.png" alt="BEM">
+	</div></section>
+	<section class="slide cover h w"><div>
+		<img src="pictures/beminfo3.png" alt="BEM">
+	</div></section>
+	<section class="slide cover h w"><div>
+		<img src="pictures/forum2.png" alt="BEM">
+	</div></section>
+	<section class="slide cover h w"><div>
+		<img src="pictures/job.png" alt="BEM">
+	</div></section>
+	<section class="slide cover h w"><div>
+		<img src="pictures/projects.png" alt="BEM">
+	</div></section>
+	<section class="slide cover h w"><div>
+		<img src="pictures/authors.png" alt="BEM">
+	</div></section>
+	<section class="slide"><div>
+		<h2>Арсенал</h2>
+		<ul>
+			<li>Продукт — библиотека bem-components: 20 блоков, тесты, документация, демо (coming), пыщ-пыщ!</li>
+			<li>Служба разработки продукта — разработчики, тестировщики, документаторы</li>
+			<li>Проекты и пользователи разного уровня сложности, размера, тп</li>
+			<li>Онлайн-площадка — bem.info</li>
+			<li><del>Мурся</del>, маркетинг, коммьюнити</li>
+		</ul>
+		<footer></footer>
+	</div></section>
+	<section class="slide cover h w"><div>
+		<img src="pictures/yeah.png" alt="BEM">
 	</div></section>
 	<section class="slide"><div>
 		<h2>Пользователям и контрибьюторам</h2>
@@ -87,6 +442,12 @@
 			<li class="next">Продвигаем вместе</li>
 		</ul>
 		<footer></footer>
+	</div></section>
+	<section class="slide cover w"><div>
+		<img src="pictures/ask.png" alt="BEM">
+	</div></section>
+	<section class="slide"><div>
+		<p style="text-align: center"><img src="pictures/thanks.png" alt="BEM" width="70%"></p>
 	</div></section>
 	<p class="badge"><a href="https://github.com/tadatuta">Fork me on Github</a></p>
 	<!--

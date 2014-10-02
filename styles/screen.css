@@ -45,6 +45,18 @@
     background-size: auto 99%;
 }
 
+.slide.myself.mursya
+{
+    background: #fff url(../pictures/mursya.png) no-repeat 120% 50%;
+    background-size: auto 70%;
+}
+
+.slide.myself.vitaly
+{
+    background: #fff url(../pictures/vitaly.png) no-repeat 100% 30%;
+    background-size: auto 70%;
+}
+
 .slide.section div:before
 {
     content: "";
@@ -62,6 +74,11 @@
 {
     margin-top: 220px;
     color: #000;
+}
+
+.slide.important h2
+{
+    margin-top: 150px;
 }
 
 .slide.no-bullets ol li:before, .slide.no-bullets ul li:before
